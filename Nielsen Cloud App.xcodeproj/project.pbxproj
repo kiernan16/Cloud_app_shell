@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F3DC0C2F1E9AA985004DEB88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DC0C2E1E9AA985004DEB88 /* AppDelegate.swift */; };
+		F3DC0C311E9AA985004DEB88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DC0C301E9AA985004DEB88 /* ViewController.swift */; };
+		F3DC0C341E9AA985004DEB88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3DC0C321E9AA985004DEB88 /* Main.storyboard */; };
+		F3DC0C361E9AA985004DEB88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3DC0C351E9AA985004DEB88 /* Assets.xcassets */; };
+		F3DC0C391E9AA985004DEB88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3DC0C371E9AA985004DEB88 /* LaunchScreen.storyboard */; };
+		F3DC0C441E9AA985004DEB88 /* Nielsen_Cloud_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DC0C431E9AA985004DEB88 /* Nielsen_Cloud_AppTests.swift */; };
+		F3DC0C4F1E9AA985004DEB88 /* Nielsen_Cloud_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DC0C4E1E9AA985004DEB88 /* Nielsen_Cloud_AppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F3DC0C401E9AA985004DEB88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3DC0C231E9AA984004DEB88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3DC0C2A1E9AA984004DEB88;
+			remoteInfo = "Nielsen Cloud App";
+		};
+		F3DC0C4B1E9AA985004DEB88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3DC0C231E9AA984004DEB88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3DC0C2A1E9AA984004DEB88;
+			remoteInfo = "Nielsen Cloud App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F3DC0C2B1E9AA985004DEB88 /* Nielsen Cloud App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nielsen Cloud App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3DC0C2E1E9AA985004DEB88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F3DC0C301E9AA985004DEB88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F3DC0C331E9AA985004DEB88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F3DC0C351E9AA985004DEB88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3DC0C381E9AA985004DEB88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F3DC0C3A1E9AA985004DEB88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3DC0C3F1E9AA985004DEB88 /* Nielsen Cloud AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nielsen Cloud AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3DC0C431E9AA985004DEB88 /* Nielsen_Cloud_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nielsen_Cloud_AppTests.swift; sourceTree = "<group>"; };
+		F3DC0C451E9AA985004DEB88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3DC0C4A1E9AA985004DEB88 /* Nielsen Cloud AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nielsen Cloud AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3DC0C4E1E9AA985004DEB88 /* Nielsen_Cloud_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nielsen_Cloud_AppUITests.swift; sourceTree = "<group>"; };
+		F3DC0C501E9AA985004DEB88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3DC0C281E9AA984004DEB88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3DC0C3C1E9AA985004DEB88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3DC0C471E9AA985004DEB88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F3DC0C221E9AA984004DEB88 = {
+			isa = PBXGroup;
+			children = (
+				F3DC0C2D1E9AA985004DEB88 /* Nielsen Cloud App */,
+				F3DC0C421E9AA985004DEB88 /* Nielsen Cloud AppTests */,
+				F3DC0C4D1E9AA985004DEB88 /* Nielsen Cloud AppUITests */,
+				F3DC0C2C1E9AA985004DEB88 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F3DC0C2C1E9AA985004DEB88 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3DC0C2B1E9AA985004DEB88 /* Nielsen Cloud App.app */,
+				F3DC0C3F1E9AA985004DEB88 /* Nielsen Cloud AppTests.xctest */,
+				F3DC0C4A1E9AA985004DEB88 /* Nielsen Cloud AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3DC0C2D1E9AA985004DEB88 /* Nielsen Cloud App */ = {
+			isa = PBXGroup;
+			children = (
+				F3DC0C2E1E9AA985004DEB88 /* AppDelegate.swift */,
+				F3DC0C301E9AA985004DEB88 /* ViewController.swift */,
+				F3DC0C321E9AA985004DEB88 /* Main.storyboard */,
+				F3DC0C351E9AA985004DEB88 /* Assets.xcassets */,
+				F3DC0C371E9AA985004DEB88 /* LaunchScreen.storyboard */,
+				F3DC0C3A1E9AA985004DEB88 /* Info.plist */,
+			);
+			path = "Nielsen Cloud App";
+			sourceTree = "<group>";
+		};
+		F3DC0C421E9AA985004DEB88 /* Nielsen Cloud AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				F3DC0C431E9AA985004DEB88 /* Nielsen_Cloud_AppTests.swift */,
+				F3DC0C451E9AA985004DEB88 /* Info.plist */,
+			);
+			path = "Nielsen Cloud AppTests";
+			sourceTree = "<group>";
+		};
+		F3DC0C4D1E9AA985004DEB88 /* Nielsen Cloud AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F3DC0C4E1E9AA985004DEB88 /* Nielsen_Cloud_AppUITests.swift */,
+				F3DC0C501E9AA985004DEB88 /* Info.plist */,
+			);
+			path = "Nielsen Cloud AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3DC0C2A1E9AA984004DEB88 /* Nielsen Cloud App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3DC0C531E9AA985004DEB88 /* Build configuration list for PBXNativeTarget "Nielsen Cloud App" */;
+			buildPhases = (
+				F3DC0C271E9AA984004DEB88 /* Sources */,
+				F3DC0C281E9AA984004DEB88 /* Frameworks */,
+				F3DC0C291E9AA984004DEB88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Nielsen Cloud App";
+			productName = "Nielsen Cloud App";
+			productReference = F3DC0C2B1E9AA985004DEB88 /* Nielsen Cloud App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F3DC0C3E1E9AA985004DEB88 /* Nielsen Cloud AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3DC0C561E9AA985004DEB88 /* Build configuration list for PBXNativeTarget "Nielsen Cloud AppTests" */;
+			buildPhases = (
+				F3DC0C3B1E9AA985004DEB88 /* Sources */,
+				F3DC0C3C1E9AA985004DEB88 /* Frameworks */,
+				F3DC0C3D1E9AA985004DEB88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3DC0C411E9AA985004DEB88 /* PBXTargetDependency */,
+			);
+			name = "Nielsen Cloud AppTests";
+			productName = "Nielsen Cloud AppTests";
+			productReference = F3DC0C3F1E9AA985004DEB88 /* Nielsen Cloud AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F3DC0C491E9AA985004DEB88 /* Nielsen Cloud AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3DC0C591E9AA985004DEB88 /* Build configuration list for PBXNativeTarget "Nielsen Cloud AppUITests" */;
+			buildPhases = (
+				F3DC0C461E9AA985004DEB88 /* Sources */,
+				F3DC0C471E9AA985004DEB88 /* Frameworks */,
+				F3DC0C481E9AA985004DEB88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3DC0C4C1E9AA985004DEB88 /* PBXTargetDependency */,
+			);
+			name = "Nielsen Cloud AppUITests";
+			productName = "Nielsen Cloud AppUITests";
+			productReference = F3DC0C4A1E9AA985004DEB88 /* Nielsen Cloud AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3DC0C231E9AA984004DEB88 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Nielsen;
+				TargetAttributes = {
+					F3DC0C2A1E9AA984004DEB88 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = YMG83K4C2B;
+						ProvisioningStyle = Automatic;
+					};
+					F3DC0C3E1E9AA985004DEB88 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = YMG83K4C2B;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F3DC0C2A1E9AA984004DEB88;
+					};
+					F3DC0C491E9AA985004DEB88 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = YMG83K4C2B;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F3DC0C2A1E9AA984004DEB88;
+					};
+				};
+			};
+			buildConfigurationList = F3DC0C261E9AA984004DEB88 /* Build configuration list for PBXProject "Nielsen Cloud App" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F3DC0C221E9AA984004DEB88;
+			productRefGroup = F3DC0C2C1E9AA985004DEB88 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3DC0C2A1E9AA984004DEB88 /* Nielsen Cloud App */,
+				F3DC0C3E1E9AA985004DEB88 /* Nielsen Cloud AppTests */,
+				F3DC0C491E9AA985004DEB88 /* Nielsen Cloud AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3DC0C291E9AA984004DEB88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3DC0C391E9AA985004DEB88 /* LaunchScreen.storyboard in Resources */,
+				F3DC0C361E9AA985004DEB88 /* Assets.xcassets in Resources */,
+				F3DC0C341E9AA985004DEB88 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3DC0C3D1E9AA985004DEB88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3DC0C481E9AA985004DEB88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3DC0C271E9AA984004DEB88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3DC0C311E9AA985004DEB88 /* ViewController.swift in Sources */,
+				F3DC0C2F1E9AA985004DEB88 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3DC0C3B1E9AA985004DEB88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3DC0C441E9AA985004DEB88 /* Nielsen_Cloud_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3DC0C461E9AA985004DEB88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3DC0C4F1E9AA985004DEB88 /* Nielsen_Cloud_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F3DC0C411E9AA985004DEB88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3DC0C2A1E9AA984004DEB88 /* Nielsen Cloud App */;
+			targetProxy = F3DC0C401E9AA985004DEB88 /* PBXContainerItemProxy */;
+		};
+		F3DC0C4C1E9AA985004DEB88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3DC0C2A1E9AA984004DEB88 /* Nielsen Cloud App */;
+			targetProxy = F3DC0C4B1E9AA985004DEB88 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F3DC0C321E9AA985004DEB88 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3DC0C331E9AA985004DEB88 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F3DC0C371E9AA985004DEB88 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3DC0C381E9AA985004DEB88 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F3DC0C511E9AA985004DEB88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F3DC0C521E9AA985004DEB88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3DC0C541E9AA985004DEB88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YMG83K4C2B;
+				INFOPLIST_FILE = "Nielsen Cloud App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kiernan.Nielsen-Cloud-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F3DC0C551E9AA985004DEB88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YMG83K4C2B;
+				INFOPLIST_FILE = "Nielsen Cloud App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kiernan.Nielsen-Cloud-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F3DC0C571E9AA985004DEB88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = YMG83K4C2B;
+				INFOPLIST_FILE = "Nielsen Cloud AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kiernan.Nielsen-Cloud-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nielsen Cloud App.app/Nielsen Cloud App";
+			};
+			name = Debug;
+		};
+		F3DC0C581E9AA985004DEB88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = YMG83K4C2B;
+				INFOPLIST_FILE = "Nielsen Cloud AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kiernan.Nielsen-Cloud-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nielsen Cloud App.app/Nielsen Cloud App";
+			};
+			name = Release;
+		};
+		F3DC0C5A1E9AA985004DEB88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = YMG83K4C2B;
+				INFOPLIST_FILE = "Nielsen Cloud AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kiernan.Nielsen-Cloud-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Nielsen Cloud App";
+			};
+			name = Debug;
+		};
+		F3DC0C5B1E9AA985004DEB88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = YMG83K4C2B;
+				INFOPLIST_FILE = "Nielsen Cloud AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kiernan.Nielsen-Cloud-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Nielsen Cloud App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3DC0C261E9AA984004DEB88 /* Build configuration list for PBXProject "Nielsen Cloud App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3DC0C511E9AA985004DEB88 /* Debug */,
+				F3DC0C521E9AA985004DEB88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3DC0C531E9AA985004DEB88 /* Build configuration list for PBXNativeTarget "Nielsen Cloud App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3DC0C541E9AA985004DEB88 /* Debug */,
+				F3DC0C551E9AA985004DEB88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F3DC0C561E9AA985004DEB88 /* Build configuration list for PBXNativeTarget "Nielsen Cloud AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3DC0C571E9AA985004DEB88 /* Debug */,
+				F3DC0C581E9AA985004DEB88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F3DC0C591E9AA985004DEB88 /* Build configuration list for PBXNativeTarget "Nielsen Cloud AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3DC0C5A1E9AA985004DEB88 /* Debug */,
+				F3DC0C5B1E9AA985004DEB88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F3DC0C231E9AA984004DEB88 /* Project object */;
+}
