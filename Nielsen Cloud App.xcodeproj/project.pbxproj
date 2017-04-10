@@ -14,6 +14,12 @@
 		F3DC0C391E9AA985004DEB88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3DC0C371E9AA985004DEB88 /* LaunchScreen.storyboard */; };
 		F3DC0C441E9AA985004DEB88 /* Nielsen_Cloud_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DC0C431E9AA985004DEB88 /* Nielsen_Cloud_AppTests.swift */; };
 		F3DC0C4F1E9AA985004DEB88 /* Nielsen_Cloud_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DC0C4E1E9AA985004DEB88 /* Nielsen_Cloud_AppUITests.swift */; };
+		F3DC0C5D1E9AAE01004DEB88 /* Global Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DC0C5C1E9AAE01004DEB88 /* Global Variables.swift */; };
+		F3DC0C631E9ABA0D004DEB88 /* MetadataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DC0C621E9ABA0D004DEB88 /* MetadataTableViewController.swift */; };
+		F3DC0C651E9ABA2F004DEB88 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DC0C641E9ABA2F004DEB88 /* VideoPlayerViewController.swift */; };
+		F3DC0C6A1E9AC237004DEB88 /* MetadataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DC0C681E9AC237004DEB88 /* MetadataTableViewCell.swift */; };
+		F3DC0C6B1E9AC237004DEB88 /* MetadataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3DC0C691E9AC237004DEB88 /* MetadataTableViewCell.xib */; };
+		F3DC0C6E1E9AE77B004DEB88 /* Nielsen Cloud Calls.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DC0C6D1E9AE77B004DEB88 /* Nielsen Cloud Calls.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		F3DC0C4A1E9AA985004DEB88 /* Nielsen Cloud AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nielsen Cloud AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3DC0C4E1E9AA985004DEB88 /* Nielsen_Cloud_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nielsen_Cloud_AppUITests.swift; sourceTree = "<group>"; };
 		F3DC0C501E9AA985004DEB88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3DC0C5C1E9AAE01004DEB88 /* Global Variables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Global Variables.swift"; sourceTree = "<group>"; };
+		F3DC0C621E9ABA0D004DEB88 /* MetadataTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MetadataTableViewController.swift; path = ../MetadataTableViewController.swift; sourceTree = "<group>"; };
+		F3DC0C641E9ABA2F004DEB88 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
+		F3DC0C681E9AC237004DEB88 /* MetadataTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MetadataTableViewCell.swift; path = ../MetadataTableViewCell.swift; sourceTree = "<group>"; };
+		F3DC0C691E9AC237004DEB88 /* MetadataTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MetadataTableViewCell.xib; path = ../MetadataTableViewCell.xib; sourceTree = "<group>"; };
+		F3DC0C6D1E9AE77B004DEB88 /* Nielsen Cloud Calls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Nielsen Cloud Calls.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +112,10 @@
 				F3DC0C2E1E9AA985004DEB88 /* AppDelegate.swift */,
 				F3DC0C301E9AA985004DEB88 /* ViewController.swift */,
 				F3DC0C321E9AA985004DEB88 /* Main.storyboard */,
+				F3DC0C5C1E9AAE01004DEB88 /* Global Variables.swift */,
+				F3DC0C641E9ABA2F004DEB88 /* VideoPlayerViewController.swift */,
+				F3DC0C6D1E9AE77B004DEB88 /* Nielsen Cloud Calls.swift */,
+				F3DC0C6C1E9AE4C1004DEB88 /* TableView */,
 				F3DC0C351E9AA985004DEB88 /* Assets.xcassets */,
 				F3DC0C371E9AA985004DEB88 /* LaunchScreen.storyboard */,
 				F3DC0C3A1E9AA985004DEB88 /* Info.plist */,
@@ -123,6 +139,16 @@
 				F3DC0C501E9AA985004DEB88 /* Info.plist */,
 			);
 			path = "Nielsen Cloud AppUITests";
+			sourceTree = "<group>";
+		};
+		F3DC0C6C1E9AE4C1004DEB88 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				F3DC0C681E9AC237004DEB88 /* MetadataTableViewCell.swift */,
+				F3DC0C691E9AC237004DEB88 /* MetadataTableViewCell.xib */,
+				F3DC0C621E9ABA0D004DEB88 /* MetadataTableViewController.swift */,
+			);
+			name = TableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +263,7 @@
 			files = (
 				F3DC0C391E9AA985004DEB88 /* LaunchScreen.storyboard in Resources */,
 				F3DC0C361E9AA985004DEB88 /* Assets.xcassets in Resources */,
+				F3DC0C6B1E9AC237004DEB88 /* MetadataTableViewCell.xib in Resources */,
 				F3DC0C341E9AA985004DEB88 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,8 +289,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3DC0C6A1E9AC237004DEB88 /* MetadataTableViewCell.swift in Sources */,
+				F3DC0C631E9ABA0D004DEB88 /* MetadataTableViewController.swift in Sources */,
 				F3DC0C311E9AA985004DEB88 /* ViewController.swift in Sources */,
+				F3DC0C651E9ABA2F004DEB88 /* VideoPlayerViewController.swift in Sources */,
 				F3DC0C2F1E9AA985004DEB88 /* AppDelegate.swift in Sources */,
+				F3DC0C6E1E9AE77B004DEB88 /* Nielsen Cloud Calls.swift in Sources */,
+				F3DC0C5D1E9AAE01004DEB88 /* Global Variables.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

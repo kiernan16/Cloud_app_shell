@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Nielsen_Cloud_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,145 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sample Cloud App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4rA-Kb-xLT">
+                                <rect key="frame" x="16" y="28" width="343" height="102"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="102" id="L8Z-b2-91v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfk-n3-rFs">
+                                <rect key="frame" x="0.0" y="318" width="375" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="99" id="NiE-WS-9Fp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="DCR VOD"/>
+                                <connections>
+                                    <segue destination="Kh8-E0-jLV" kind="show" id="Lrp-LX-qlp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yvH-CO-ZLH">
+                                <rect key="frame" x="0.0" y="451" width="375" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="99" id="4EV-3N-QsX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Set Metadata"/>
+                                <connections>
+                                    <segue destination="mtc-Fs-hzB" kind="show" id="hS6-W8-Iuv"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4rA-Kb-xLT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="961-Ba-nFJ"/>
+                            <constraint firstItem="yvH-CO-ZLH" firstAttribute="top" secondItem="vfk-n3-rFs" secondAttribute="bottom" constant="34" id="MjR-aV-etA"/>
+                            <constraint firstItem="4rA-Kb-xLT" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="RD6-iv-IN4"/>
+                            <constraint firstAttribute="trailing" secondItem="vfk-n3-rFs" secondAttribute="trailing" id="aP4-rO-9YI"/>
+                            <constraint firstItem="vfk-n3-rFs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="agf-ca-dPa"/>
+                            <constraint firstItem="yvH-CO-ZLH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dCm-3D-9Yt"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yvH-CO-ZLH" secondAttribute="bottom" constant="100" id="f0P-UU-A7r"/>
+                            <constraint firstAttribute="trailing" secondItem="yvH-CO-ZLH" secondAttribute="trailing" id="iGT-oT-kOY"/>
+                            <constraint firstItem="4rA-Kb-xLT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="jw4-py-LTa"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+        <!--Metadata Table View Controller-->
+        <scene sceneID="Bsz-oz-Dmo">
+            <objects>
+                <tableViewController id="mtc-Fs-hzB" customClass="MetadataTableViewController" customModule="Nielsen_Cloud_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="81" sectionHeaderHeight="28" sectionFooterHeight="28" id="qI9-0i-Ikh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lMe-sh-GOI">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="back"/>
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" id="Q4a-5e-bkK"/>
+                            </connections>
+                        </button>
+                        <connections>
+                            <outlet property="dataSource" destination="mtc-Fs-hzB" id="eEM-Fd-Aq7"/>
+                            <outlet property="delegate" destination="mtc-Fs-hzB" id="cP6-kr-udS"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a3p-gx-fv4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="845.60000000000002" y="519.49025487256381"/>
+        </scene>
+        <!--Video Player View Controller-->
+        <scene sceneID="cxB-5k-ZYm">
+            <objects>
+                <viewController id="Kh8-E0-jLV" customClass="VideoPlayerViewController" customModule="Nielsen_Cloud_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oUZ-8j-rvi"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zoj-Sp-UI2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4Jz-Tv-Fvj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P9G-vj-icP">
+                                <rect key="frame" x="7" y="588" width="368" height="79"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="WbI-vH-8d9"/>
+                                </constraints>
+                                <state key="normal" title="exit"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Cta-SB-z4e"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DCR Video" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WKA-ap-8tN">
+                                <rect key="frame" x="0.0" y="20" width="375" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="thf-DA-PYS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yX3-7I-fnK">
+                                <rect key="frame" x="0.0" y="83" width="375" height="329"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="329" id="jrS-PU-VNV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yX3-7I-fnK" firstAttribute="leading" secondItem="4Jz-Tv-Fvj" secondAttribute="leading" id="0cE-Oj-bsT"/>
+                            <constraint firstItem="WKA-ap-8tN" firstAttribute="leading" secondItem="4Jz-Tv-Fvj" secondAttribute="leading" id="5E7-ag-osY"/>
+                            <constraint firstAttribute="trailing" secondItem="yX3-7I-fnK" secondAttribute="trailing" id="Dyu-I4-l6b"/>
+                            <constraint firstItem="Zoj-Sp-UI2" firstAttribute="top" secondItem="P9G-vj-icP" secondAttribute="bottom" id="JoB-aa-KE7"/>
+                            <constraint firstItem="yX3-7I-fnK" firstAttribute="top" secondItem="WKA-ap-8tN" secondAttribute="bottom" constant="8" id="T29-OB-DWO"/>
+                            <constraint firstItem="WKA-ap-8tN" firstAttribute="top" secondItem="oUZ-8j-rvi" secondAttribute="bottom" id="UYH-wg-CMh"/>
+                            <constraint firstAttribute="trailing" secondItem="WKA-ap-8tN" secondAttribute="trailing" id="j5A-Sd-Lsr"/>
+                            <constraint firstItem="P9G-vj-icP" firstAttribute="leading" secondItem="4Jz-Tv-Fvj" secondAttribute="leading" id="lPQ-K3-JY4"/>
+                            <constraint firstAttribute="trailing" secondItem="P9G-vj-icP" secondAttribute="trailing" id="tIF-g4-xDq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="playerFrame" destination="yX3-7I-fnK" id="Jmh-ss-7Zh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4RW-tg-33V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="925.60000000000002" y="-225.33733133433284"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Cta-SB-z4e"/>
+    </inferredMetricsTieBreakers>
 </document>
