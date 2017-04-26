@@ -43,21 +43,10 @@ class VideoPlayerViewController: UIViewController {
         
         currentItem = player.currentItem!
         
-//        let duration = currentItem.duration
-//        length = String(describing: currentItem.duration)
-//        length = String(describing: self.player.currentItem?.duration)
-//        let t1 = (self.player.currentItem.value)
-//        let t2 = Float(self.player.currentItem.timescale)
-
-//        let t1 = Float((self.player.currentItem?.currentTime().value)!)
-//        let t2 = Float((self.player.currentItem?.currentTime().timescale)!)
-//        length = String(t1 / t2)
-        
         player.addObserver(self, forKeyPath: "rate", options: NSKeyValueObservingOptions.new, context: nil)
 
         
         player.play()
-//        startTimer()
 
     }
     
@@ -68,9 +57,11 @@ class VideoPlayerViewController: UIViewController {
                 isFirstTime = false
             }
             
-            let t10 = Float((self.player.currentItem?.currentTime().value)!)
-            let t20 = Float((self.player.currentItem?.currentTime().timescale)!)
-            length = String(t10 / t20)
+            //Set total length
+            let duration : CMTime = player.currentItem!.asset.duration
+            let seconds = String(CMTimeGetSeconds(duration))
+            length = seconds
+            
             
             startTimer()
         }
@@ -79,8 +70,6 @@ class VideoPlayerViewController: UIViewController {
             timer?.cancel()
             
             NielsenCloud(Cloud_Event: "playhead", Playhead_Time: self.getTime())
-            //sendGETRequest(url: getRequest)
-            
         }
     }
 
@@ -94,20 +83,8 @@ class VideoPlayerViewController: UIViewController {
         timer?.scheduleRepeating(deadline: .now(), interval: .seconds(10), leeway: .milliseconds(100))
         
         timer?.setEventHandler {  // `[weak self]` only needed if you reference `self` in this closure and you want to prevent strong reference cycle
-//            print(Date())
-            
-//            let currentTime = String(describing: self.currentItem.currentTime())
-//            let currentTime = String(describing: self.player.currentTime())
-            
-//            let t1 = Float(self.player.currentTime().value)
-//            let t2 = Float(self.player.currentTime().timescale)
-//
-//            
-//            let currentTime = String(t1 / t2)
             
            NielsenCloud(Cloud_Event: "playhead", Playhead_Time: self.getTime())
-            //sendGETRequest(url: getRequest)
-            
         }
         
         timer?.resume()
