@@ -26,8 +26,6 @@ func NielsenCloud(Cloud_Event: String, Playhead_Time: String){
     
     let urlwithPercentEscapes = urlString.addingPercentEncoding( withAllowedCharacters: NSCharacterSet.urlQueryAllowed)
 
-    
-    //return urlwithPercentEscapes!
     sendGETRequest(url: urlwithPercentEscapes!)
 }
 
