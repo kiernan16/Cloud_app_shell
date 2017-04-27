@@ -69,7 +69,12 @@ class VideoPlayerViewController: UIViewController {
         if player.rate < 1.0 {
             timer?.cancel()
             
-            NielsenCloud(Cloud_Event: "playhead", Playhead_Time: self.getTime())
+            var playhead = self.getTime()
+            NielsenCloud(Cloud_Event: "playhead", Playhead_Time: playhead)
+        
+            if(playhead >= length) {
+                NielsenCloud(Cloud_Event: "complete", Playhead_Time: playhead)
+            }
         }
     }
 
@@ -99,6 +104,11 @@ class VideoPlayerViewController: UIViewController {
         return String(t1 / t2)
     }
     
+    @IBAction func exitPlayer(_ sender: UIButton) {
+        timer?.cancel()
+        NielsenCloud(Cloud_Event: "playhead", Playhead_Time: self.getTime())
+        NielsenCloud(Cloud_Event: "delete", Playhead_Time: self.getTime())
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

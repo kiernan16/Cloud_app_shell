@@ -117,6 +117,7 @@
                                 </constraints>
                                 <state key="normal" title="exit"/>
                                 <connections>
+                                    <action selector="exitPlayer:" destination="Kh8-E0-jLV" eventType="touchUpInside" id="NeH-xb-Get"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="Cta-SB-z4e"/>
                                 </connections>
                             </button>
