@@ -29,7 +29,7 @@ var crossId2 = ""
 var adloadtype = "2"
 var hasAds = "0"
 var progen = "na"
-var length = "sss"
+var length = "0"
 
 
 

@@ -20,6 +20,7 @@ class VideoPlayerViewController: UIViewController {
     
     var nielsenSessionID = ""
     var isFirstTime = true
+    var isComplete = false
     
     override func viewWillAppear(_ animated: Bool) {
         // 1. Create Nielsen Session ID
@@ -59,10 +60,10 @@ class VideoPlayerViewController: UIViewController {
             
             //Set total length
             let duration : CMTime = player.currentItem!.asset.duration
-            let seconds = String(CMTimeGetSeconds(duration))
+            let seconds = String(Int(CMTimeGetSeconds(duration)))
             length = seconds
             
-            
+            isComplete = false
             startTimer()
         }
         
@@ -70,10 +71,11 @@ class VideoPlayerViewController: UIViewController {
             timer?.cancel()
             
             var playhead = self.getTime()
-            NielsenCloud(Cloud_Event: "playhead", Playhead_Time: playhead)
+            NielsenCloud(Cloud_Event: "playhead", Playhead_Time: playhead, Content_Type: "content")
         
-            if(playhead >= length) {
-                NielsenCloud(Cloud_Event: "complete", Playhead_Time: playhead)
+            if(playhead == length) {
+                NielsenCloud(Cloud_Event: "complete", Playhead_Time: playhead, Content_Type: "content")
+                isComplete = true
             }
         }
     }
@@ -89,7 +91,7 @@ class VideoPlayerViewController: UIViewController {
         
         timer?.setEventHandler {  // `[weak self]` only needed if you reference `self` in this closure and you want to prevent strong reference cycle
             
-           NielsenCloud(Cloud_Event: "playhead", Playhead_Time: self.getTime())
+           NielsenCloud(Cloud_Event: "playhead", Playhead_Time: self.getTime(), Content_Type: "content")
         }
         
         timer?.resume()
@@ -101,13 +103,17 @@ class VideoPlayerViewController: UIViewController {
         let t2 = Float(self.player.currentTime().timescale)
         
         
-        return String(t1 / t2)
+        return String(Int(t1 / t2))
     }
+    
+
     
     @IBAction func exitPlayer(_ sender: UIButton) {
         timer?.cancel()
-        NielsenCloud(Cloud_Event: "playhead", Playhead_Time: self.getTime())
-        NielsenCloud(Cloud_Event: "delete", Playhead_Time: self.getTime())
+        if (isComplete == false) {
+            NielsenCloud(Cloud_Event: "playhead", Playhead_Time: self.getTime(), Content_Type: "content")
+        }
+        NielsenCloud(Cloud_Event: "delete", Playhead_Time: "", Content_Type: "content")
     }
 
     override func didReceiveMemoryWarning() {

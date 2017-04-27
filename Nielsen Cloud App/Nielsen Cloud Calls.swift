@@ -9,16 +9,16 @@
 import Foundation
 
 
-func NielsenCloud(Cloud_Event: String, Playhead_Time: String){
+func NielsenCloud(Cloud_Event: String, Playhead_Time: String, Content_Type: String){
     
     
     let utcString = floor(Date().timeIntervalSince1970)
     
     let payloadString = "{\"devInfo\": {\"devId\": \"\(devid)\", \"apn\": \"\(apn)\", \"apv\": \"\(apv)\", \"uoo\": \"\(uoo)\"},"
     
-    let metadataString = "\"metadata\": {\"static\": {}, \"content\": { \"type\": \"content\", \"assetid\": \"\(assetid)\", \"isfullepisode\": \"\(isfullepisode)\", \"program\": \"\(program)\", \"title\": \"\(title)\", \"length\": \"\(length)\", \"segB\": \"\(segB)\", \"segC\": \"\(segC)\", \"crossId1\": \"\(crossId1)\", \"crossId2\": \"\(crossId2)\", \"airdate\": \"\(airdate)\", \"adloadtype\": \"\(adloadtype)\", \"hasAds\": \"\(hasAds)\", \"progen\": \"\(progen)\"}, \"ad\": {}},"
+    let metadataString = "\"metadata\": {\"static\": {}, \"content\": { \"type\": \"\(Content_Type)\", \"assetid\": \"\(assetid)\", \"isfullepisode\": \"\(isfullepisode)\", \"program\": \"\(program)\", \"title\": \"\(title)\", \"length\": \"\(length)\", \"segB\": \"\(segB)\", \"segC\": \"\(segC)\", \"crossId1\": \"\(crossId1)\", \"crossId2\": \"\(crossId2)\", \"airdate\": \"\(airdate)\", \"adloadtype\": \"\(adloadtype)\", \"hasAds\": \"\(hasAds)\", \"progen\": \"\(progen)\"}, \"ad\": {}},"
     
-    let eventString = "\"event\": \"\(Cloud_Event)\", \"position\": \"\(Playhead_Time)\", \"type\": \"content\", \"utc\": \"\(utcString)\"}"
+    let eventString = "\"event\": \"\(Cloud_Event)\", \"position\": \"\(Playhead_Time)\", \"type\": \"\(Content_Type)\", \"utc\": \"\(utcString)\"}"
     
     let fullPayloadString = payloadString + metadataString + eventString
     
