@@ -9,14 +9,23 @@
 import Foundation
 
 
-func NielsenCloud(Cloud_Event: String, Playhead_Time: String, Content_Type: String){
+func NielsenCloud(Cloud_Event: String, Playhead_Time: String, Content_Type: String, ad_assetid: String, ad_title: String, ad_type: String){
     
     
     let utcString = floor(Date().timeIntervalSince1970)
     
     let payloadString = "{\"devInfo\": {\"devId\": \"\(devid)\", \"apn\": \"\(apn)\", \"apv\": \"\(apv)\", \"uoo\": \"\(uoo)\"},"
     
-    let metadataString = "\"metadata\": {\"static\": {}, \"content\": { \"type\": \"\(Content_Type)\", \"assetid\": \"\(assetid)\", \"isfullepisode\": \"\(isfullepisode)\", \"program\": \"\(program)\", \"title\": \"\(title)\", \"length\": \"\(length)\", \"segB\": \"\(segB)\", \"segC\": \"\(segC)\", \"crossId1\": \"\(crossId1)\", \"crossId2\": \"\(crossId2)\", \"airdate\": \"\(airdate)\", \"adloadtype\": \"\(adloadtype)\", \"hasAds\": \"\(hasAds)\", \"progen\": \"\(progen)\"}, \"ad\": {}},"
+    var staticString = ""
+    
+    var adString = ""
+    
+    if(Content_Type == "ad") {
+        /* assetid: '18300598', title: '', type: 'preroll' */
+        adString = "\"assetid\": \"\(ad_assetid)\", \"title\": \"\(ad_title)\", \"type\": \"\(ad_type)\""
+    }
+    
+    let metadataString = "\"metadata\": {\"static\": {\(staticString)}, \"content\": { \"type\": \"\(Content_Type)\", \"assetid\": \"\(assetid)\", \"isfullepisode\": \"\(isfullepisode)\", \"program\": \"\(program)\", \"title\": \"\(title)\", \"length\": \"\(length)\", \"segB\": \"\(segB)\", \"segC\": \"\(segC)\", \"crossId1\": \"\(crossId1)\", \"crossId2\": \"\(crossId2)\", \"airdate\": \"\(airdate)\", \"adloadtype\": \"\(adloadtype)\", \"hasAds\": \"\(hasAds)\", \"progen\": \"\(progen)\"}, \"ad\": {\(adString)}},"
     
     let eventString = "\"event\": \"\(Cloud_Event)\", \"position\": \"\(Playhead_Time)\", \"type\": \"\(Content_Type)\", \"utc\": \"\(utcString)\"}"
     
