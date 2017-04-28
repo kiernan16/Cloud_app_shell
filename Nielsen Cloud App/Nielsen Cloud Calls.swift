@@ -9,7 +9,7 @@
 import Foundation
 
 
-func NielsenCloud(Cloud_Event: String, Playhead_Time: String, Content_Type: String, ad_assetid: String? = "", ad_title: String? = "", ad_type: String? = ""){
+func NielsenCloud(Cloud_Event: String, Playhead_Time: String, Content_Type: String, ad_assetid: String = "", ad_title: String = "", ad_type: String = ""){
     
     
     let utcString = floor(Date().timeIntervalSince1970)
