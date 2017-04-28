@@ -71,10 +71,10 @@ class VideoPlayerViewController: UIViewController {
             timer?.cancel()
             
             var playhead = self.getTime()
-            NielsenCloud(Cloud_Event: "playhead", Playhead_Time: playhead, Content_Type: "content")
+            NielsenCloud(Cloud_Event: "playhead", Playhead_Time: playhead, Content_Type: "content", ad_assetid: "", ad_title: "", ad_type: "")
         
             if(playhead == length) {
-                NielsenCloud(Cloud_Event: "complete", Playhead_Time: playhead, Content_Type: "content")
+                NielsenCloud(Cloud_Event: "complete", Playhead_Time: playhead, Content_Type: "content", ad_assetid: "", ad_title: "", ad_type: "")
                 isComplete = true
             }
         }
@@ -91,7 +91,7 @@ class VideoPlayerViewController: UIViewController {
         
         timer?.setEventHandler {  // `[weak self]` only needed if you reference `self` in this closure and you want to prevent strong reference cycle
             
-           NielsenCloud(Cloud_Event: "playhead", Playhead_Time: self.getTime(), Content_Type: "content")
+           NielsenCloud(Cloud_Event: "playhead", Playhead_Time: self.getTime(), Content_Type: "content", ad_assetid: "", ad_title: "", ad_type: "")
         }
         
         timer?.resume()
@@ -111,9 +111,9 @@ class VideoPlayerViewController: UIViewController {
     @IBAction func exitPlayer(_ sender: UIButton) {
         timer?.cancel()
         if (isComplete == false) {
-            NielsenCloud(Cloud_Event: "playhead", Playhead_Time: self.getTime(), Content_Type: "content")
+            NielsenCloud(Cloud_Event: "playhead", Playhead_Time: self.getTime(), Content_Type: "content", ad_assetid: "", ad_title: "", ad_type: "")
         }
-        NielsenCloud(Cloud_Event: "delete", Playhead_Time: "", Content_Type: "content")
+        NielsenCloud(Cloud_Event: "delete", Playhead_Time: "", Content_Type: "content", ad_assetid: "", ad_title: "", ad_type: "")
     }
 
     override func didReceiveMemoryWarning() {
