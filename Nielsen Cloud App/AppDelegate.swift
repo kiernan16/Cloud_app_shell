@@ -39,7 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-        NielsenCloud(Cloud_Event: "delete", Playhead_Time: "", Content_Type: "", ad_assetid: "", ad_title: "", ad_type: "")
+        NielsenCloud(Cloud_Event: "delete", Playhead_Time: "", Content_Type: "")
     }
 
 
